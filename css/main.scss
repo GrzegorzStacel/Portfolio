@@ -11,4 +11,150 @@ body{
     // background-color: black;
     font-size: 1.6rem; // happy rems
     font-family: 'Roboto', sans-serif;
+.visible {
+    display: flex !important;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+
+    .logo {
+        color: $base-color-yellow;
+        font-size: 2.5rem;
+    }
+
+    &.mobile {
+        flex-direction: column;
+
+        .logo {
+            align-self: flex-start;
+        }
+
+        #navigation {
+            flex-direction: column;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            position: absolute;
+            transform: translateX(-50%);
+            background: black;
+            width: 80vw;
+            opacity: 0.8;
+
+            li {
+                text-align: center;
+            }
+        }
+
+        #hamburgermenu {
+            transform: inherit;
+            top: 22%;
+        }
+    }
+
+    #navigation {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        font-size: 1.9rem;
+
+        li a:hover {
+            color: $base-color-yellow;
+        }
+    }
+
+    #hamburgermenu {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 101;
+        right: 25px;
+        cursor: pointer;
+        display: none;
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            border-radius: 2px;
+            transition: .3s;
+
+            &.mobile {
+                top: 15px;
+            }
+
+            &:before,
+            &:after {
+                border-radius: 2px;
+                content: "";
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                top: -10px;
+                position: absolute;
+                transition: .3s;
+            }
+
+            &:after {
+                top: 10px;
+            }
+
+            &.active {
+                width: 0;
+                top: 50%;
+
+                &:before {
+                    transform: rotate(45deg) scaleX(1.2);
+                    top: 0px;
+                }
+
+                &:after {
+                    transform: rotate(-45deg) scaleX(1.2);
+                    top: 0px;
+                }
+            }
+        }
+    }
+    
+    @media all and(max-width: 1024px) {
+        #navigation {
+            display: none;
+        }
+        
+        #hamburgermenu{
+            display: block;
+        }
+    }
+    
+    @media all and(min-width: 1024px) {
+        &.mobile{
+            flex-direction: row !important;
+            
+            #navigation {
+                flex-direction: row;
+                position: relative;
+                padding-top: 0;
+                transform: translateX(0);
+                background: none;
+                padding-bottom: 0;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    @media all and(max-width: 767px) {
+        &.mobile #navigation {
+            width: 100vw;
+        }
+    }
+}
 }
