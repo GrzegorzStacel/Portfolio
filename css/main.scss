@@ -1,16 +1,55 @@
-*, *::before, *::after{
+$base-color-yellow: #FACA3F;
+$base-color-blue: #2C6E9B;
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html{
-    font-size: 62.5%;
+html {
+    font-size: 62.5%; // happy rems
+
+    @media all and(max-width: 1366px) {
+        font-size: 56%;
+    }
 }
 
-body{
-    // background-image: url("../images/background.png");
-    // background-color: black;
+// Tymczasowe zmniejszenie obrazów aby nie rozpychały okna przeglądarki
+img {
+    width: 50%;
+}
+//
+
+body {
+    background-image: url("../images/background.png");
+    background-color: black;
     font-size: 1.6rem; // happy rems
     font-family: 'Roboto', sans-serif;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.box {
+    max-width: 1400px;
+    flex-basis: 1400px;
+    margin: 0 auto;
+
+    @media all and(max-width: 1366px) {
+        max-width: 1024px;
+    }
+
+    @media all and(max-width: 1024px) {
+        max-width: 700px;
+    }
+}
+
 .visible {
     display: flex !important;
 }
