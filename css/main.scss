@@ -81,7 +81,7 @@ body {
             transform: translateX(-50%);
             background: black;
             width: 80vw;
-            opacity: 0.8;
+            background: rgba(black, 0.8);
 
             li {
                 text-align: center;
@@ -106,8 +106,8 @@ body {
     }
 
     #hamburgermenu {
-        width: 35px;
-        height: 35px;
+        width: 3.5rem;
+        height: 3.5rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -117,7 +117,7 @@ body {
         display: none;
 
         .bar {
-            width: 25px;
+            width: 2.5rem;
             height: 3px;
             background-color: white;
             position: absolute;
@@ -135,7 +135,7 @@ body {
             &:after {
                 border-radius: 2px;
                 content: "";
-                width: 25px;
+                width: 2.5rem;
                 height: 3px;
                 background-color: white;
                 top: -10px;
@@ -163,21 +163,21 @@ body {
             }
         }
     }
-    
+
     @media all and(max-width: 1024px) {
         #navigation {
             display: none;
         }
-        
-        #hamburgermenu{
+
+        #hamburgermenu {
             display: block;
         }
     }
-    
+
     @media all and(min-width: 1024px) {
-        &.mobile{
+        &.mobile {
             flex-direction: row !important;
-            
+
             #navigation {
                 flex-direction: row;
                 position: relative;
@@ -196,4 +196,80 @@ body {
         }
     }
 }
+
+.firstlook {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .firstlook-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .firstlook-container_p {
+            letter-spacing: 1.5rem;
+            padding-left: 4px;
+        }
+
+        .firstlook-container_h1 {
+            font-weight: bold;
+            font-size: 7.4rem;
+
+            span {
+                color: $base-color-yellow;
+            }
+        }
+
+        .firstlook-container_img {
+            width: 56rem;
+        }
+    }
+
+    @media (max-width: 1366px) {
+        .firstlook-container {
+            .firstlook-container_p {
+                font-size: 1.2rem;
+            }
+
+            .firstlook-container_h1 {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    @media all and(max-width: 1029px) {
+        .firstlook-container {
+            flex-direction: column;
+
+            .firstlook-container_p {
+                font-size: 1rem;
+            }
+
+            .firstlook-container_img {
+                margin-top: 10rem;
+            }
+        }
+    }
+
+
+    @media all and(max-width: 767px) {
+        .firstlook-container {
+            .firstlook-container_p {
+                font-size: .7rem;
+                letter-spacing: 1rem;
+            }
+
+            .firstlook-container_h1 {
+                font-size: 4rem;
+            }
+
+            .firstlook-container_img {
+                width: 30rem;
+            }
+        }
+    }
+}
+
 }
