@@ -272,4 +272,116 @@ body {
     }
 }
 
+.about {
+    display: flex;
+    position: relative;
+
+    .left-block {
+        background: $base-color-yellow;
+        position: relative;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0 2rem 0;
+
+        .left-block-container {
+            border: 2px solid black;
+            border-radius: 25px;
+            background: white;
+            color: black;
+            width: 35rem;
+            margin: 8rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            position: relative;
+
+            img {
+                top: -50%;
+                position: absolute;
+                width: 115px;
+            }
+
+            .left-block-container-name {
+                font-size: 2rem;
+                font-weight: bold;
+                color: $base-color-blue;
+                margin-top: 40px;
+            }
+
+            .left-block-container-desc {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 2rem 1rem 1rem 1rem;
+            }
+        }
+    }
+
+    .right-block {
+        background: $base-color-blue;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0;
+
+        p {
+            display: block;
+            font-weight: 500;
+            width: 50%;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+    }
+
+    .decorationWindow-img {
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+    }
+
+    @media(max-width: 1030px) {
+        flex-direction: column;
+
+        .decorationWindow {
+            height: 0;
+
+            .decorationWindow-img {
+                width: 140px;
+                top: -5px;
+                position: relative;
+            }
+        }
+    }
+
+    @media(max-width: 767px) {
+       .left-block{
+
+           .left-block-container{
+               margin: 12rem 0;
+                img{
+                    width: 100px;
+                    top: -44%;
+                }
+           }
+       }
+
+       .right-block{
+           padding: 90px 0;
+           p{
+                max-width: 450px;
+                width: auto;
+                padding: 0 20px;
+           }
+       } 
+
+        .decorationWindow .decorationWindow-img {
+            width: 120px;
+        }
+    }
 }
