@@ -12,8 +12,8 @@ $base-color-blue: #2C6E9B;
 html {
     font-size: 62.5%; // happy rems
 
-    @media all and(max-width: 1366px) {
-        font-size: 56%;
+    @media all and(max-width: 767px) {
+        font-size: 55%;
     }
 }
 
