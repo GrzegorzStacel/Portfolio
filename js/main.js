@@ -1,6 +1,10 @@
+// 1# Navigation bar
+
 var ham = document.getElementById("hamburgermenu");
-var id_navigation = document.getElementById("navigation");
-var id_mobile_header = document.getElementById("header");
+
+ham.addEventListener('click', function () {
+    var id_navigation = document.getElementById("navigation");
+    var id_mobile_header = document.getElementById("header");
 
 
 ham.addEventListener('click', function () {
