@@ -359,25 +359,40 @@ body {
     }
 
     @media(max-width: 767px) {
-       .left-block{
+        .left-block {
 
-           .left-block-container{
-               margin: 12rem 0;
-                img{
+            .left-block-container {
+                margin: 12rem 0;
+
+                img {
                     width: 100px;
                     top: -44%;
                 }
-           }
-       }
+            }
+        }
 
-       .right-block{
-           padding: 90px 0;
-           p{
+        .right-block {
+            padding: 90px 0;
+
+            p {
                 max-width: 450px;
                 width: auto;
                 padding: 0 20px;
-           }
+            }
+        }
+
+        .decorationWindow .decorationWindow-img {
+            width: 120px;
+        }
+    }
+}
        } 
+}
+    }
+}
+
+    }
+}
 
         .decorationWindow .decorationWindow-img {
             width: 120px;
