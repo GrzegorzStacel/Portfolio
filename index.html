@@ -149,28 +149,31 @@
         </div>
     </section>
 
-    <section>
-        <div>
+    <section class="modules box">
+
+        <div class="modules-icon" id="node">
             <img src="images/icon_node.png" alt="Node icon">
             <h2>Node.js</h2>
         </div>
 
-        <div>
-            <h3>My Games API</h3>
+        <div class="modules-project">
+            <h3 class="yellow">My Games API</h3>
 
-            <div>
+            <div class="modules-project-tech frame frame-bar_yellow">
                 <h4>Modules used</h4>
-                <p>Mongoose.js</p>
-                <p>Express.js</p>
-                <p>Ejs</p>
-                <p>Connect-Flash.js</p>
-                <p>Passport.js</p>
-                <p>FileUpload.js</p>
-                <p>Joi.js</p>
-                <p>Bcrypt.js</p>
+                <div>
+                    <p>Mongoose.js</p>
+                    <p>Express.js</p>
+                    <p>Ejs</p>
+                    <p>Connect-Flash.js</p>
+                    <p>Passport.js</p>
+                    <p>FileUpload.js</p>
+                    <p>Joi.js</p>
+                    <p>Bcrypt.js</p>
+                </div>
             </div>
 
-            <div>
+            <div class="modules-project-tech frame frame-bar_yellow">
                 <h4>Technologies</h4>
                 <div>
                     <p>MongoDB</p>
@@ -181,35 +184,67 @@
                 </div>
             </div>
 
-            <div>
+            <div class="frame frame-bar_yellow">
                 <h4>Live Project</h4>
                 <button>
-                    <a href="https://myapi-library.herokuapp.com/">Go to look</a>
+                    <a href="https://myapi-library.herokuapp.com/" target="_blank" rel="nofollow">Go to look</a>
                 </button>
 
-                <p>Shourtcut</p>
-                <div>
-                    <div>
+                <div class="shourtcut">
+                    <h5>Shourtcut</h5>
+                    <div class="shourtcut-container">
                         <p>Login:</p>
+                        <p class="shourtcut-container-p_bold">testAccount@gmail.com</p>
+                        <span class="material-icons-outlined">content_copy</span>
+                        <span class="info-label">Click and copy</span>
+
                         <p>Password:</p>
-                    </div>
-                    <div>
-                        <p>testAccount@gmail.com</p>
-                        <p>1234aA</p>
+                        <p class="shourtcut-container-p_bold">1234aA</p>
+                        <span class="material-icons-outlined">content_copy</span>
+                        <span class="info-label">Click and copy</span>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div class="frame frame-bar_yellow">
+                <h4>GitHub</h4>
+                <button>
+                    <a href="https://github.com/GrzegorzStacel/Menager" target="_blank" rel="nofollow">Go to read</a>
+                </button>
+            </div>
+
+            <div class="modules-project-screenshots frame">
                 <h4>Screen Shots</h4>
-                <div>
-                    <img src="images/screenshots/screenshot_mygames_01.png"
-                        alt="First screnn shot of 'My games api' app">
-                    <img src="images/screenshots/screenshot_mygames_02.png"
-                        alt="Second screnn shot of 'My games api' app">
-                    <img src="images/screenshots/screenshot_mygames_03.png"
-                        alt="Third screnn shot of 'My games api' app">
-                </div>
+                <div id="nanogallery2-api"></div>
+                <script>
+                    jQuery(document).ready(function () {
+
+                        jQuery("#nanogallery2-api").nanogallery2({
+                            viewerTools: {
+                                topLeft: 'none',
+                                topRight: 'closeButton'
+                            },
+                            thumbnailHeight: 610,
+                            thumbnailWidth: 610,
+                            thumbnailHoverEffect2: 'image_scale_1.00_1.20',
+                            "itemsBaseURL": "images/screenshots/",
+
+                            items: [{
+                                    src: 'screenshot_mygames_01.png'
+                                },
+                                {
+                                    src: 'screenshot_mygames_02.png'
+                                },
+                                {
+                                    src: 'screenshot_mygames_03.png'
+                                },
+                                {
+                                    src: 'screenshot_mygames_04.png'
+                                },
+                            ]
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
