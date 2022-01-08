@@ -21,3 +21,53 @@ ham.addEventListener('click', function () {
 
     }
 });
+
+
+// 2# Click button and copy to clipboard
+
+const span = document.getElementsByClassName("material-icons-outlined");
+
+for (let i = 0; i < span.length; i++) {
+    const shourtcut = document.getElementsByClassName("shourtcut-container-p_bold");
+    const info_label = document.getElementsByClassName('info-label');
+    
+
+    span[i].addEventListener('mouseenter', function() {
+        info_label[i].style.opacity = '1';
+    })
+    span[i].addEventListener('mouseleave', function() {
+        info_label[i].style.opacity = '0';
+    })
+    
+
+    shourtcut[i].addEventListener('mouseenter', function () {
+        info_label[i].style.opacity = '1';
+    })
+    shourtcut[i].addEventListener('mouseleave', function() {
+        info_label[i].style.opacity = '0';
+    })
+    
+    span[i].addEventListener('click', function showcomment() {
+        console.log('span');
+        navigator.clipboard.writeText(shourtcut[i].textContent);
+        
+        changeTextLabel(i);
+    }, false)
+    
+    shourtcut[i].addEventListener('click', function showcomment() {
+        console.log('shourtcut');
+        navigator.clipboard.writeText(shourtcut[i].textContent);
+
+        changeTextLabel(i);
+    }, false)
+}
+
+function changeTextLabel(i) {
+    const info_label = document.getElementsByClassName("info-label");
+
+    info_label[i].innerHTML = 'Copied!';
+
+    setTimeout(() => {
+        info_label[i].innerHTML = 'Click and copy';
+    }, 2000);
+}
