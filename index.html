@@ -119,10 +119,30 @@
 
             <div class="modules-project-screenshots frame">
                 <h4>Screen Shots</h4>
-                <img src="images/screenshots/screenshot_enexercisegrammar_01.png"
-                    alt="First screen shot from Exercise Grammar app">
-                <img src="images/screenshots/screenshot_enexercisegrammar_02.png"
-                    alt="Second screen shot from Exercise Grammar app">
+                <div id="nanogallery2-enexercisegrammar"></div>
+                <script>
+                    jQuery(document).ready(function () {
+
+                        jQuery("#nanogallery2-enexercisegrammar").nanogallery2({
+                            viewerTools: {
+                                topLeft: 'none',
+                                topRight: 'closeButton'
+                            },
+                            thumbnailHeight: 610,
+                            thumbnailWidth: 610,
+                            thumbnailHoverEffect2: 'image_scale_1.00_1.20',
+                            "itemsBaseURL": "images/screenshots/",
+
+                            items: [{
+                                    src: 'screenshot_enexercisegrammar_01.png'
+                                },
+                                {
+                                    src: 'screenshot_enexercisegrammar_02.png'
+                                },
+                            ]
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
