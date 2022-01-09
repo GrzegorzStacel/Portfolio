@@ -256,43 +256,75 @@
                 <h2 class="modules-icon-character_size">w<span class="modules-icon-character_color">W</span>w</h2>
             </div>
 
-            <div>
-                <h4>Technologies</h4>
-                <div>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>SCSS</p>
-                    <p>JavaScript</p>
-                    <p>jQuery</p>
+            <!-- #1 Developer -->
+            <div class="modules-project">
+                <h3>#1 Developer</h3>
+
+                <div class="modules-project-tech frame frame-bar_blue">
+                    <h4>Technologies</h4>
+                    <div>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>SCSS</p>
+                        <p>JavaScript</p>
+                        <p>jQuery</p>
+                    </div>
+                </div>
+
+                <div class="modules-project-tech frame frame-bar_blue">
+                    <h4>Extensions</h4>
+                    <p>lightGallery</p>
+                </div>
+
+                <div class="frame frame-bar_blue">
+                    <h4>Live Project</h4>
+                    <button>
+                        <a href="http://provo.webd.pro/moduly/index.html" target="_blank" rel="nofollow">Go to look</a>
+                    </button>
+                </div>
+
+                <div class="frame frame-bar_blue">
+                    <h4>GitHub</h4>
+                    <button>
+                        <a href="https://github.com/GrzegorzStacel/developer" target="_blank" rel="nofollow">Go to
+                            read</a>
+                    </button>
+                </div>
+
+                <div class="modules-project-screenshots frame">
+                    <h4>Screen Shots</h4>
+                    <div id="nanogallery2-developer"></div>
+                    <script>
+                        jQuery(document).ready(function () {
+
+                            jQuery("#nanogallery2-developer").nanogallery2({
+                                viewerTools: {
+                                    topLeft: 'none',
+                                    topRight: 'closeButton'
+                                },
+                                thumbnailHeight: 610,
+                                thumbnailWidth: 610,
+                                thumbnailHoverEffect2: 'image_scale_1.00_1.20',
+                                "itemsBaseURL": "images/screenshots/",
+
+                                items: [{
+                                        src: 'screenshot_developer_01.png'
+                                    },
+                                    {
+                                        src: 'screenshot_developer_02.png'
+                                    },
+                                    {
+                                        src: 'screenshot_developer_03.png'
+                                    },
+                                    {
+                                        src: 'screenshot_developer_04.png'
+                                    },
+                                ]
+                            });
+                        });
+                    </script>
                 </div>
             </div>
-
-            <div>
-                <h4>Extensions</h4>
-                <p>lightGallery</p>
-            </div>
-
-            <div>
-                <h4>Live Project</h4>
-                <button>
-                    <a href="http://provo.webd.pro/moduly/index.html" target="_blank" rel="nofollow">Go to look</a>
-                </button>
-            </div>
-
-            <div>
-                <h4>Screen Shots</h4>
-                <div>
-                    <img src="images/screenshots/screenshot_developer_01.png"
-                        alt="First screnn shot of my first website">
-                    <img src="images/screenshots/screenshot_developer_02.png"
-                        alt="Second screnn shot of my first website">
-                    <img src="images/screenshots/screenshot_developer_03.png"
-                        alt="Third screnn shot of my first website">
-                    <img src="images/screenshots/screenshot_developer_04.png"
-                        alt="Fourth screnn shot of my first website">
-                </div>
-            </div>
-        </div>
 
         <div>
             <h3>#2 Wior</h3>
