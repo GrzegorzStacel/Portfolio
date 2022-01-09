@@ -398,49 +398,78 @@
                 </div>
             </div>
 
-        <div>
-            <h3>#3 Ann-Marie</h3>
+            <!-- #3 Ann-Marie -->
+            <div class="modules-project">
+                <h3>#3 Ann-Marie</h3>
 
-            <div>
-                <h4>Technologies</h4>
-                <div>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>SCSS</p>
-                    <p>JavaScript</p>
-                    <p>Node.js</p>
-                    <p>jQuery</p>
-                    <p>Gulp</p>
-                    <p>PHP</p>
+                <div class="modules-project-tech frame frame-bar_blue">
+                    <h4>Technologies</h4>
+                    <div>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>SCSS</p>
+                        <p>JavaScript</p>
+                        <p>Node.js</p>
+                        <p>jQuery</p>
+                        <p>Gulp</p>
+                        <p>PHP</p>
+                    </div>
+                </div>
+
+                <div class="modules-project-tech frame frame-bar_blue">
+                    <h4>Extensions</h4>
+                    <p>zoomwall.js</p>
+                </div>
+
+                <div class="frame frame-bar_blue">
+                    <h4>Live Project</h4>
+                    <button>
+                        <a href="http://salonannmarie.czest.pl/" target="_blank" rel="nofollow">Go to look</a>
+                    </button>
+                </div>
+
+                <div class="frame frame-bar_blue">
+                    <h4>GitHub</h4>
+                    <button>
+                        <a href="https://github.com/GrzegorzStacel/ann-marie" target="_blank" rel="nofollow">Go to
+                            read</a>
+                    </button>
+                </div>
+
+                <div class="modules-project-screenshots frame">
+                    <h4>Screen Shots</h4>
+                    <div id="nanogallery2-annMarie"></div>
+                    <script>
+                        jQuery(document).ready(function () {
+
+                            jQuery("#nanogallery2-annMarie").nanogallery2({
+                                viewerTools: {
+                                    topLeft: 'none',
+                                    topRight: 'closeButton'
+                                },
+                                thumbnailHeight: 610,
+                                thumbnailWidth: 610,
+                                thumbnailHoverEffect2: 'image_scale_1.00_1.20',
+                                "itemsBaseURL": "images/screenshots/",
+
+                                items: [{
+                                        src: 'screenshot_annmarie_01.png'
+                                    },
+                                    {
+                                        src: 'screenshot_annmarie_02.png'
+                                    },
+                                    {
+                                        src: 'screenshot_annmarie_03.png'
+                                    },
+                                    {
+                                        src: 'screenshot_annmarie_04.png'
+                                    },
+                                ]
+                            });
+                        });
+                    </script>
                 </div>
             </div>
-
-            <div>
-                <h4>Extensions</h4>
-                <p>zoomwall.js</p>
-            </div>
-
-            <div>
-                <h4>Live Project</h4>
-                <button>
-                    <a href="http://salonannmarie.czest.pl/" target="_blank" rel="nofollow">Go to look</a>
-                </button>
-            </div>
-
-            <div>
-                <h4>Screen Shots</h4>
-                <div>
-                    <img src="images/screenshots/screenshot_annmarie_01.png"
-                        alt="First screnn shot of my third website">
-                    <img src="images/screenshots/screenshot_annmarie_02.png"
-                        alt="Second screnn shot of my third website">
-                    <img src="images/screenshots/screenshot_annmarie_03.png"
-                        alt="Third screnn shot of my third website">
-                    <img src="images/screenshots/screenshot_annmarie_04.png"
-                        alt="Fourth screnn shot of my third website">
-                </div>
-            </div>
-        </div>
 
         <div>
             <h3>#4 Pillows</h3>
