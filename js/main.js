@@ -25,7 +25,7 @@ ham.addEventListener('click', function () {
 
 // 2# Click button and copy to clipboard
 
-const span = document.getElementsByClassName("material-icons-outlined");
+const span = document.getElementsByClassName("copy_icon");
 
 for (let i = 0; i < span.length; i++) {
     const shourtcut = document.getElementsByClassName("shourtcut-container-p_bold");
