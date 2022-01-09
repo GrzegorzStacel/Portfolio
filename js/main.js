@@ -6,8 +6,6 @@ ham.addEventListener('click', function () {
     var id_navigation = document.getElementById("navigation");
     var id_mobile_header = document.getElementById("header");
 
-
-ham.addEventListener('click', function () {
     var bar = this.firstElementChild.classList;
     bar.toggle('active');
 
@@ -40,7 +38,7 @@ for (let i = 0; i < span.length; i++) {
     })
     
 
-    shourtcut[i].addEventListener('mouseenter', function () {
+    shourtcut[i].addEventListener('mouseenter', function() {
         info_label[i].style.opacity = '1';
     })
     shourtcut[i].addEventListener('mouseleave', function() {
@@ -48,14 +46,12 @@ for (let i = 0; i < span.length; i++) {
     })
     
     span[i].addEventListener('click', function showcomment() {
-        console.log('span');
         navigator.clipboard.writeText(shourtcut[i].textContent);
         
         changeTextLabel(i);
     }, false)
     
     shourtcut[i].addEventListener('click', function showcomment() {
-        console.log('shourtcut');
         navigator.clipboard.writeText(shourtcut[i].textContent);
 
         changeTextLabel(i);
