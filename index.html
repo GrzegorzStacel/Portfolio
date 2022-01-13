@@ -28,7 +28,56 @@
 </head>
 
 <body>
-    <header id="header" class="box">
+    <header class="header">
+        <section class="container box">
+           <div class="wrapper">
+              <a href="./index.html" class="logo">MyProjects</a>
+              <!-- <button type="button" class="burger" id="burger">
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+              </button> -->
+              <div class="burger" id="burger">
+                <div class="burger-line"></div>
+                </div>
+              <span class="overlay" id="overlay"></span>
+              <nav class="navbar" id="navbar">
+                 <ul class="menu">
+                    <li class="menu-item menu-item-child">
+                       <a href="#react" data-toggle="sub-menu">React</a>
+                       <ul class="sub-menu">
+                          <li class="menu-item"><a href="#exercise_grammar">Exercise Grammar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-child">
+                        <a href="#node" data-toggle="sub-menu">Node</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#my_games_api">My Games API</a></li>
+                       </ul>
+                    </li>
+                    <li class="menu-item menu-item-child">
+                       <a href="#www" data-toggle="sub-menu">www</a>
+                       <ul class="sub-menu">
+                          <li class="menu-item"><a href="#developer">Developer</a></li>
+                          <li class="menu-item"><a href="#wior">Wior</a></li>
+                          <li class="menu-item"><a href="#ann_marie">Ann Marie</a></li>
+                          <li class="menu-item"><a href="#pillows">Pillows</a></li>
+                          <li class="menu-item"><a href="#montaz">Montaz</a></li>
+                       </ul>
+                    </li>
+                    <li class="menu-item"><a href="#contact">Contact</a></li>
+                 </ul>
+              </nav>
+           </div>
+        </section>
+     </header>
+
+
+
+
+
+    <!-- <header id="header" class="box">
 
         <a class="logo" href="index.html">MyProjects</a>
 
@@ -44,7 +93,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <section class="firstlook">
         <div class="firstlook-container box">
@@ -91,7 +140,7 @@
                 <h2>React JS</h2>
             </div>
 
-            <div class="modules-project">
+            <div class="modules-project" id="exercise_grammar">
                 <h3>Exercise Grammar</h3>
 
                 <div class="modules-project-tech frame frame-bar_blue">
@@ -149,15 +198,15 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Node #1 -->
-        <section class="modules">
-            <div class="modules-icon" id="node">
+        <section class="modules" id="node">
+            <div class="modules-icon" >
                 <img src="images/icon_node.png" alt="Node icon">
                 <h2>Node.js</h2>
             </div>
 
-            <div class="modules-project">
+            <div class="modules-project" id="my_games_api">
                 <h3 class="yellow">My Games API</h3>
 
                 <div class="modules-project-tech frame frame-bar_yellow">
@@ -259,7 +308,7 @@
             </div>
 
             <!-- #1 Developer -->
-            <div class="modules-project">
+            <div class="modules-project" id="developer">
                 <h3>#1 Developer</h3>
 
                 <div class="modules-project-tech frame frame-bar_blue">
@@ -329,7 +378,7 @@
             </div>
 
             <!-- #2 Wior -->
-            <div class="modules-project">
+            <div class="modules-project" id="wior">
                 <h3 class="yellow">#2 Wior</h3>
 
                 <div class="modules-project-tech frame frame-bar_yellow">
@@ -401,7 +450,7 @@
             </div>
 
             <!-- #3 Ann-Marie -->
-            <div class="modules-project">
+            <div class="modules-project" id="ann_marie">
                 <h3>#3 Ann-Marie</h3>
 
                 <div class="modules-project-tech frame frame-bar_blue">
@@ -474,7 +523,7 @@
             </div>
 
             <!-- #4 Pillows -->
-            <div class="modules-project">
+            <div class="modules-project" id="pillows">
                 <h3 class="yellow">#4 Pillows</h3>
 
                 <div class="modules-project-tech frame frame-bar_yellow">
@@ -542,7 +591,7 @@
             </div>
 
             <!-- #5 Montaz -->
-            <div class="modules-project">
+            <div class="modules-project" id="montaz">
                 <h3>#5 Montaz</h3>
 
                 <div class="modules-project-tech frame frame-bar_blue">
