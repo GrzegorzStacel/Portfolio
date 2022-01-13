@@ -1,5 +1,4 @@
 // 1# Navigation bar
-
 const navbarMenu = document.getElementById('navbar');
 const burgerMenu = document.getElementById('burger');
 const overlayMenu = document.getElementById('overlay');
@@ -58,29 +57,11 @@ window.addEventListener('resize', () => {
 });
 
 
-// var ham = document.getElementById("hamburgermenu");
 
-// ham.addEventListener('click', function () {
-//     var id_navigation = document.getElementById("navigation");
-//     var id_mobile_header = document.getElementById("header");
 
-//     var bar = this.firstElementChild.classList;
-//     bar.toggle('active');
-
-//     if (bar.contains('active')) {
-//         id_navigation.classList.add('visible');
-//         id_mobile_header.classList.add('mobile');
-
-//     } else {
-//         id_navigation.classList.remove('visible');
-//         id_mobile_header.classList.remove('mobile');
-
-//     }
-// });
 
 
 // 2# Click button and copy to clipboard
-
 const span = document.getElementsByClassName("copy_icon");
 
 for (let i = 0; i < span.length; i++) {
@@ -103,17 +84,59 @@ for (let i = 0; i < span.length; i++) {
         info_label[i].style.opacity = '0';
     })
     
-    span[i].addEventListener('click', function showcomment() {
-        navigator.clipboard.writeText(shourtcut[i].textContent);
-        
-        changeTextLabel(i);
-    }, false)
     
-    shourtcut[i].addEventListener('click', function showcomment() {
-        navigator.clipboard.writeText(shourtcut[i].textContent);
+    if (window.innerWidth <= 992) {
+        span[i].addEventListener('click', function showcomment() {
+            copyTest(shourtcut-container-p_bold);
+        }, false)
+        
+        shourtcut[i].addEventListener('click', function showcomment() {
+            copyTest(shourtcut-container-p_bold);
+        }, false)  
+    } else {
+        span[i].addEventListener('click', function showcomment() {
+            navigator.clipboard.writeText(shourtcut[i].textContent);
+            
+            changeTextLabel(i);
+        }, false)
+        
+        shourtcut[i].addEventListener('click', function showcomment() {
+            navigator.clipboard.writeText(shourtcut[i].textContent);
+    
+            changeTextLabel(i);
+        }, false)  
+    }
+}
 
-        changeTextLabel(i);
-    }, false)
+function copyTest(elementId) {
+
+	var input = document.getElementById(elementId);
+	var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
+
+	if (isiOSDevice) {
+	  
+		var editable = input.contentEditable;
+		var readOnly = input.readOnly;
+
+		input.contentEditable = true;
+		input.readOnly = false;
+
+		var range = document.createRange();
+		range.selectNodeContents(input);
+
+		var selection = window.getSelection();
+		selection.removeAllRanges();
+		selection.addRange(range);
+
+		input.setSelectionRange(0, 999999);
+		input.contentEditable = editable;
+		input.readOnly = readOnly;
+
+	} else {
+	 	input.select();
+	}
+
+	document.execCommand('copy');
 }
 
 function changeTextLabel(i) {
@@ -126,8 +149,11 @@ function changeTextLabel(i) {
     }, 2000);
 }
 
-// #3 Scroll to top button
 
+
+
+
+// #3 Scroll to top button
 const scroll_button = document.getElementById('top-arrow_container');
 
 window.onscroll = function () { scroll_function() };
