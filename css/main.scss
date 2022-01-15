@@ -786,15 +786,19 @@ body {
             }
         }
 
-        @media(max-width: 480px) {
-            .modules-project {
-                .frame.frame-bar_blue::after {
-                    width: 150%;
-                    left: -23%;
-                }
+    @media(max-width: 480px) {
+        .modules-project {
+            .frame {
+                padding: 7rem 2rem;
+            }
+
+            .frame.frame-bar_blue::after {
+                width: 150%;
+                left: -23%;
             }
         }
     }
+}
 
     footer {
         width: 100%;
