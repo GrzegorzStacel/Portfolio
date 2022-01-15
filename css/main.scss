@@ -744,19 +744,30 @@ body {
 
 
     @media(max-width: 1150px) {
+        .modules-project {
+
+            .material-icons-outlined,
+            .info-label {
+                display: none;
+            }
+
+            .shourtcut {
                 text-align: center;
 
                 .shourtcut-container {
                     text-align: center;
                     flex-direction: column;
+                    align-items: center;
                     width: 100%;
 
                     p:nth-child(5) {
                         margin-top: 5rem;
                     }
 
-                    .shourtcut-container-p_bold {
+                    .shourtcut-container-p_bold,
+                    .shourtcut-container-p_bold:focus {
                         font-size: 1.8rem;
+                        text-align: center;
                     }
 
                     .info-label {
@@ -773,6 +784,7 @@ body {
                 }
             }
         }
+    }
 
     @media(max-width: 767px) {
         .modules-project {
