@@ -680,16 +680,19 @@ body {
                     flex-basis: 25%;
                 }
 
-                    .shourtcut-container-p_bold {
-                        font-weight: 700;
-                        color: #FACA3F;
-                        flex-basis: 25%;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $base-color-blue;
-                        }
-                    }
+                .shourtcut-container-p_bold,
+                .shourtcut-container-p_bold:focus {
+                    font-size: 1.9rem;
+                    color: $base-color-yellow;
+                    font-weight: bold;
+                    text-align: left;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    flex-basis: 25%;
+                    height: fit-content;
+                }
 
                 .info-label {
                     color: white;
