@@ -703,22 +703,18 @@ body {
                     padding-left: 1rem;
                 }
 
-                    .material-icons-outlined {
+                .material-icons-outlined {
+                    color: #d5d5d5;
+                    cursor: pointer;
+                    height: fit-content;
+
+                    &:hover {
                         color: white;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $base-color-blue;
-                        }
-
-                        &.md-48 {
-                            font-size: 48px;
-                            color: red;
-                        }
                     }
                 }
             }
         }
+    }
 
     @media(max-width: 1366px) {
         .modules-icon {
