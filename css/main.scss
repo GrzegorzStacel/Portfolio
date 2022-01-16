@@ -265,12 +265,16 @@ body {
                     display: block;
                     margin: 0;
                     padding-left: 3rem;
+                    
+                    &:hover > a{
+                        color: white !important;
+                    }
                 }
-
+                
                 .menu-item:first-of-type {
                     padding-top: 5rem;
                 }
-
+                
                 .menu-item-child>a {
                     display: flex;
                     justify-content: space-between;
