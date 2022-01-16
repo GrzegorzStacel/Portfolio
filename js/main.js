@@ -3,6 +3,7 @@ const navbarMenu = document.getElementById('navbar');
 const burgerMenu = document.getElementById('burger');
 const overlayMenu = document.getElementById('overlay');
 const burgerLine = document.getElementsByClassName('burger-line');
+const close_handler = document.getElementsByClassName('close-handler');
 
 // Toggle Menu Function
 burgerMenu.addEventListener('click', toggleMenu);
@@ -14,12 +15,41 @@ function toggleMenu() {
     burgerLine[0].classList.toggle('active');
 }
 
+// Close Menu when user click for id hook link
+for (let i = 0; i < close_handler.length; i++) {
+    close_handler[i].addEventListener('click', (e) => {
+        toggleMenu();
+
+        const e_target = e.target.parentElement.parentElement.previousElementSibling;
+        
+        if (e_target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
+            const menuItemHasChildren = e_target.parentElement;
+            
+            // If menu-item-child is Expanded, then Collapse It
+            if (menuItemHasChildren.classList.contains('active')) {
+                collapseSubMenu();
+            } else {
+                // Collapse the Existing Expanded menu-item-child
+                if (navbarMenu.querySelector('.menu-item-child.active')) {
+                    collapseSubMenu();
+                }
+                
+                // Expanded the New menu-item-child
+                menuItemHasChildren.classList.add('active');
+                const subMenu = menuItemHasChildren.querySelector('.sub-menu');
+                subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+            }
+        }
+    } )
+}
+
 // Collapse SubMenu Function
 navbarMenu.addEventListener('click', (e) => {
+
     if (e.target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
         e.preventDefault();
         const menuItemHasChildren = e.target.parentElement;
-
+        
         // If menu-item-child is Expanded, then Collapse It
         if (menuItemHasChildren.classList.contains('active')) {
             collapseSubMenu();
