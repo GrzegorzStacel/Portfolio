@@ -19,37 +19,25 @@ function toggleMenu() {
 for (let i = 0; i < close_handler.length; i++) {
     close_handler[i].addEventListener('click', (e) => {
         toggleMenu();
-
-        const e_target = e.target.parentElement.parentElement.previousElementSibling;
-        
-        if (e_target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
-            const menuItemHasChildren = e_target.parentElement;
-            
-            // If menu-item-child is Expanded, then Collapse It
-            if (menuItemHasChildren.classList.contains('active')) {
-                collapseSubMenu();
-            } else {
-                // Collapse the Existing Expanded menu-item-child
-                if (navbarMenu.querySelector('.menu-item-child.active')) {
-                    collapseSubMenu();
-                }
-                
-                // Expanded the New menu-item-child
-                menuItemHasChildren.classList.add('active');
-                const subMenu = menuItemHasChildren.querySelector('.sub-menu');
-                subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
-            }
-        }
-    } )
+        collapseAfterClick(e, e.target.parentElement.parentElement.previousElementSibling, false);
+    })
 }
 
 // Collapse SubMenu Function
 navbarMenu.addEventListener('click', (e) => {
+        collapseAfterClick(e, e.target, true)
+});
 
-    if (e.target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
-        e.preventDefault();
+function collapseAfterClick(e, e_target, isPreventDefault) {
+
+    if (e_target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
+
+        if (isPreventDefault) {
+            e.preventDefault();
+        }
+
         const menuItemHasChildren = e.target.parentElement;
-        
+
         // If menu-item-child is Expanded, then Collapse It
         if (menuItemHasChildren.classList.contains('active')) {
             collapseSubMenu();
@@ -64,7 +52,7 @@ navbarMenu.addEventListener('click', (e) => {
             subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
         }
     }
-});
+}
 
 function collapseSubMenu() {
     navbarMenu.querySelector('.menu-item-child.active .sub-menu').removeAttribute('style');
@@ -117,10 +105,10 @@ for (let i = 0; i < span.length; i++) {
     span[i].addEventListener('click', function showcomment() {
         navigator.clipboard.writeText(shourtcut[i].textContent);
         navigator.clipboard.writeText(shourtcut[i].value);
-        
+
         changeTextLabel(i);
     }, false)
-    
+
     shourtcut[i].addEventListener('click', function showcomment() {
         navigator.clipboard.writeText(shourtcut[i].textContent);
         navigator.clipboard.writeText(shourtcut[i].value);
