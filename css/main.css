@@ -747,6 +747,13 @@ body a {
   height: fit-content;
 }
 
+.modules .modules-project .shourtcut .shourtcut-container .shourtcut-container-p_bold:hover,
+.modules .modules-project .shourtcut .shourtcut-container .shourtcut-container-p_bold:focus:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #fcdb79;
+}
+
 .modules .modules-project .shourtcut .shourtcut-container .info-label {
   color: white;
   font-size: 1rem;

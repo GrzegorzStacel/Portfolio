@@ -125,7 +125,7 @@ body {
                     min-width: 13.5rem;
 
                     &:hover a {
-                        color: $base-color-yellow;
+                        color: #fcdb79;
                     }
 
                     >a {
@@ -302,7 +302,7 @@ body {
 
                     >.menu-item>a {
                         padding: 0.625rem 2rem;
-                        color: $base-color-blue;
+                        color: $base-color-yellow;
                     }
                 }
             }
@@ -323,17 +323,6 @@ body {
         .navbar {
             width: 100%;
             height: 70vh;
-
-            .active:after {
-                content: '';
-                display: block;
-                width: 10%;
-                height: 3px;
-                background: $base-color-yellow;
-                margin: 0 auto;
-                position: relative;
-                top: -8px;
-            }
         }
 
         .menu {
