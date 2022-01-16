@@ -639,7 +639,7 @@ body {
                 flex-wrap: wrap;
                 justify-content: space-around;
                 gap: 4rem;
-
+                
                 p {
                     color: $base-color-yellow;
                     font-size: 2rem;
@@ -807,6 +807,10 @@ body {
                 left: 50%;
                 transform: translateX(-50%);
             }
+
+           .modules-project-tech div{
+                flex-direction: column;
+            }
         }
     }
 }
@@ -861,6 +865,7 @@ footer {
     align-items: center;
     cursor: pointer;
     display: none;
+    z-index: 999;
 
     &:hover {
         background: rgba(250, 202, 63, 0.9);
