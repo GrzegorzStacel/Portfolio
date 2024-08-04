@@ -38,12 +38,14 @@
                 <a href="#react" data-toggle="sub-menu">React</a>
                 <ul class="sub-menu">
                   <li class="menu-item close-handler"><a href="#exercise_grammar">Exercise Grammar</a></li>
+                  <li class="menu-item close-handler"><a href="#countdownTimer">CountdownTimer</a></li>
                 </ul>
               </li>
               <li class="menu-item menu-item-child">
                 <a href="#node" data-toggle="sub-menu">Node</a>
                 <ul class="sub-menu">
                   <li class="menu-item close-handler"><a href="#my_games_api">My Games API</a></li>
+                  <li class="menu-item close-handler"><a href="#bot_ogame">Game bot</a></li>
                 </ul>
               </li>
               <li class="menu-item menu-item-child">
@@ -54,6 +56,12 @@
                   <li class="menu-item close-handler"><a href="#ann_marie">Ann Marie</a></li>
                   <li class="menu-item close-handler"><a href="#pillows">Pillows</a></li>
                   <li class="menu-item close-handler"><a href="#montaz">Montaz</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-child">
+                <a href="#c++" data-toggle="sub-menu">C++</a>
+                <ul class="sub-menu">
+                  <li class="menu-item close-handler"><a href="#memory_cards">Memory cards</a></li>
                 </ul>
               </li>
               <li class="menu-item close-handler"><a href="#contact">Contact</a></li>
@@ -81,7 +89,10 @@
         <div class="left-block-container">
           <img src="images/me.png" alt="My picture" />
           <p class="left-block-container-name">Grzegorz Stącel</p>
-          <p class="left-block-container-desc">Over 6 years of learning programming in free time after work</p>
+          <p class="left-block-container-desc">
+            I have over 7 years of programming experience, which I have gained during my free time from work by working on various projects and
+            learning new technologies.
+          </p>
         </div>
       </div>
 
@@ -91,12 +102,25 @@
 
       <div class="right-block">
         <p>
-          I am looking for a job as a junior<br />
-          front-end / back-end developer but I have not worked in this industry in any company yet. <br /><br />
-          Privately, I made 4 websites for various companies and several smaller projects, including 1 REST API application from MongoDB in Node.js
-          and one in React.js
-          <br /><br />
-          I am currently in the process of developing applications in React.js
+          My journey into programming began in 2017 with learning C++. One of my first projects was a computer game that I built independently, which
+          allowed me to develop my algorithmic and logical thinking skills.
+        </p>
+        <br />
+        <p>
+          Over time, I discovered my passion for web development and began exploring the intricacies of both front-end and back-end development. My
+          journey into front-end development started with an in-person course led by a programmer with over 25 years of experience, which provided me
+          with a strong foundation and deep insights into the field.
+        </p>
+        <br />
+        <p>
+          I am currently seeking my first professional role as a Junior Front-End / Back-End Developer. Although I have not yet worked in the IT
+          industry, I have completed several personal projects that have helped me develop my skills and gain practical experience.
+        </p>
+        <br />
+        <p>
+          My projects reflect the practical application of technologies essential in modern web development. I am motivated to continue learning and
+          improving my skills, aiming to deliver high-quality solutions. I am eager to join a team where I can grow as a Junior Developer and
+          contribute to the company's success.
         </p>
       </div>
     </section>
@@ -112,14 +136,50 @@
         <div class="modules-project" id="exercise_grammar">
           <h3>Exercise Grammar</h3>
 
+          <div class="modules-project-tech frame frame-bar_blue text-align-left">
+            <p>This is my first application built with <span class="color-blue">React.js</span></p>
+            <br />
+            <p>It allows users to practice English prepositions of time and place (in, on, at).</p>
+            <br />
+            <p>
+              The app provides immediate feedback on the correctness of answers, which supports effective learning and improvement of grammatical
+              skills.
+            </p>
+            <br />
+            <br />
+            <p>
+              I independently created the application's layout in <span class="color-blue">Figma</span>, which allowed me to precisely plan and
+              visualize the interface before implementation.
+            </p>
+            <br />
+            <p>The app is hosted on <span class="color-blue">Netlify</span>, ensuring its online availability.</p>
+          </div>
+
           <div class="modules-project-tech frame frame-bar_blue">
             <h4>Modules used</h4>
-            <div>
-              <p>Switch</p>
-              <p>NavLink</p>
-              <p>Context API</p>
-              <p>React Router</p>
-              <p>CSS Modules + SCSS</p>
+            <div class="flex-direction-column">
+              <div class="gap-0">
+                <p class="color-blue">React Router and NavLink</p>
+                <p><span>managing navigation between different sections of the application.</span></p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Context API</p>
+                <p><span>for managing application state and sharing data between components.</span></p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Switch</p>
+                <p>
+                  <span> for rendering the appropriate components based on the route.</span>
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">CSS Modules + SCSS</p>
+                <p>
+                  <span>
+                    for styling the user interface, ensuring full responsiveness of the application and optimal performance on mobile devices.
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -165,6 +225,124 @@
             </script>
           </div>
         </div>
+
+        <div class="modules-project" id="countdownTimer">
+          <h3 class="yellow">Countdown timer</h3>
+
+          <div class="modules-project-tech frame frame-bar_yellow text-align-left">
+            <p class="warning">This is the project I am currently working on.</p>
+            <br />
+            <br />
+            <p>This application, helps track the time remaining until various important dates and events.</p>
+            <br />
+            <p>
+              Users can add new entries such as car inspections, insurance payments, utility bills, taxes, birthdays, or project deadlines to maintain
+              full control over upcoming deadlines and eliminate situations where we forget something important or remember it at the last minute.
+            </p>
+            <br />
+            <p>
+              The application uses <span class="color-blue">Firebase</span> for data management, utilizing
+              <span class="color-blue">REST API</span> for retrieving, adding, deleting, and modifying user entries.
+            </p>
+            <br />
+            <p>This allows for effective storage and real-time synchronization of data.</p>
+            <br />
+            <br />
+            <p>
+              Although the application currently has some small performance issues, and I plan to refactor it using techniques described in Nadia
+              Makarevich's book
+              <span class="color-blue"><a href="https://www.advanced-react.com/" target="_blank" rel="nofollow">'Advanced React'</a></span
+              >.
+            </p>
+            <br />
+            <p>This will be an excellent opportunity to practically apply advanced optimization methods and improve performance in React.</p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_yellow">
+            <h4>Modules used</h4>
+            <div class="flex-direction-column">
+              <div class="gap-0">
+                <p class="color-blue">Moedim</p>
+                <p><span>A light-weight, localizable and customizable, styled React calendar component.</span></p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Day.js</p>
+                <p>
+                  <span
+                    >A lightweight library for handling dates and times, offering a simple interface and compatibility with moment.js, but with a
+                    smaller size.</span
+                  >
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Firebase</p>
+                <p>
+                  <span
+                    >A Google platform providing a set of tools for mobile and web applications, including a real-time database, authentication,
+                    hosting, and analytics.</span
+                  >
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Moment.js</p>
+                <p>
+                  <span> A popular library for manipulating, validating, parsing, and displaying dates and times in JavaScript. </span>
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Styled-Components</p>
+                <p>
+                  <span>
+                    A library for styling components in React applications, allowing you to write CSS in JavaScript, enabling dynamic and modular
+                    styling.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="frame frame-bar_blue">
+            <h4>Live Project</h4>
+            <button>
+              <a href="" target="_blank" rel="nofollow">Go to look</a>
+            </button>
+          </div> -->
+
+          <div class="frame frame-bar_yellow">
+            <h4>GitHub</h4>
+            <button>
+              <a href="https://github.com/GrzegorzStacel/countdownTimer" target="_blank" rel="nofollow">Go to read</a>
+            </button>
+          </div>
+
+          <!-- <div class="modules-project-screenshots frame">
+            <h4>Screen Shots</h4>
+            <div id="nanogallery2-countdownTimer"></div>
+            <script>
+              jQuery(document).ready(function () {
+                jQuery("#nanogallery2-countdownTimer").nanogallery2({
+                  viewerTools: {
+                    topLeft: "none",
+                    topRight: "closeButton",
+                  },
+                  thumbnailHeight: 610,
+                  thumbnailWidth: 610,
+                  thumbnailHoverEffect2: "image_scale_1.00_1.20",
+                  itemsBaseURL: "images/screenshots/",
+
+                  items: [
+                    {
+                      src: "screenshot__01.png",
+                    },
+                    {
+                      src: "screenshot__02.png",
+                    },
+                  ],
+                });
+              });
+            </script>
+          </div> -->
+        </div>
       </section>
 
       <!-- Node #1 -->
@@ -177,17 +355,70 @@
         <div class="modules-project" id="my_games_api">
           <h3 class="yellow">My Games API</h3>
 
+          <div class="modules-project-tech frame frame-bar_yellow text-align-left">
+            <p>I developed the My Games API application, which uses <br /><span class="color-blue">REST API</span> to manage a games database.</p>
+            <br />
+            <p>The application allows users to add new game titles, delete and modify existing ones, and add game publishers.</p>
+            <br />
+            <p>Users can sort games and use the implemented search feature to quickly find interesting titles.</p>
+            <br />
+            <p>The application offers user login and registration functionalities, with new accounts having default entries added.</p>
+            <br />
+            <p>The project aimed to enhance skills in working with REST API and develop backend and database skills.</p>
+            <br />
+            <p>It is fully <span class="color-blue">responsive</span>, ensuring optimal performance across various devices.</p>
+          </div>
+
           <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Modules used</h4>
-            <div>
-              <p>Ejs</p>
-              <p>Joi.js</p>
-              <p>Bcrypt.js</p>
-              <p>Express.js</p>
-              <p>Passport.js</p>
-              <p>Mongoose.js</p>
-              <p>FileUpload.js</p>
-              <p>Connect-Flash.js</p>
+            <div class="flex-direction-column">
+              <div class="gap-0">
+                <p class="color-blue">Ejs</p>
+                <p><span>For rendering dynamic views on the server.</span></p>
+              </div>
+
+              <div class="gap-0">
+                <p class="color-blue">Joi.js</p>
+                <p><span>For validating user input data.</span></p>
+              </div>
+
+              <div class="gap-0">
+                <p class="color-blue">Bcrypt.js</p>
+                <p>
+                  <span>For hashing passwords and securely managing user data.</span>
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Express.js</p>
+                <p>
+                  <span>For building and managing APIs.</span>
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Passport.js</p>
+                <p>
+                  <span>For handling user authentication and sessions.</span>
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">Mongoose.js</p>
+                <p>
+                  <span>For interacting with the MongoDB database.</span>
+                </p>
+              </div>
+              <div class="gap-0">
+                <p class="color-blue">FileUpload.js</p>
+                <p>
+                  <span>For handling file uploads.</span>
+                </p>
+              </div>
+
+              <div class="gap-0">
+                <p class="color-blue">Connect-Flash.js</p>
+                <p>
+                  <span> For managing session messages. </span>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -288,6 +519,88 @@
             </script>
           </div>
         </div>
+
+        <div class="modules-project" id="bot_ogame">
+          <h3>Ogame bot</h3>
+
+          <div class="modules-project-tech frame frame-bar_blue text-align-left">
+            <p class="warning">This is the project I am currently working on.</p>
+            <br />
+            <p>
+              I am working on a game bot in <span class="color-blue">Node.js</span>, using the <span class="color-blue">Puppeteer.js</span> library to
+              automate tasks in the browser.
+            </p>
+            <br />
+            <p>
+              I noticed that in my previous projects, I didn't have many opportunities to use async/await, so I decided to use this project to better
+              understand and practice these techniques in practice.
+            </p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_blue">
+            <h4>Technologies</h4>
+            <div>
+              <p>Node.js</p>
+              <p>JavaScript</p>
+            </div>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_blue">
+            <h4>Library</h4>
+            <div class="flex-direction-column">
+              <div class="gap-0">
+                <p class="color-blue">Puppeteer.js</p>
+                <p>
+                  <span
+                    >Puppeteer is a Node.js library for automating Chrome or Chromium browsers. It allows you to perform tasks such as taking
+                    screenshots, scraping data, and testing web applications by interacting with the browser through a simple API.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="frame frame-bar_blue">
+            <h4>GitHub</h4>
+            <button>
+              <a href="https://github.com/GrzegorzStacel/Bot_Ogame" target="_blank" rel="nofollow">Go to read</a>
+            </button>
+          </div>
+          <!-- 
+          <div class="modules-project-screenshots frame">
+            <h4>Screen Shots</h4>
+            <div id="nanogallery2-api"></div>
+            <script>
+              jQuery(document).ready(function () {
+                jQuery("#nanogallery2-api").nanogallery2({
+                  viewerTools: {
+                    topLeft: "none",
+                    topRight: "closeButton",
+                  },
+                  thumbnailHeight: 610,
+                  thumbnailWidth: 610,
+                  thumbnailHoverEffect2: "image_scale_1.00_1.20",
+                  itemsBaseURL: "images/screenshots/",
+
+                  items: [
+                    {
+                      src: "screenshot__01.png",
+                    },
+                    {
+                      src: "screenshot__02.png",
+                    },
+                    {
+                      src: "screenshot__03.png",
+                    },
+                    {
+                      src: "screenshot__04.png",
+                    },
+                  ],
+                });
+              });
+            </script>
+          </div>-->
+        </div>
       </section>
 
       <!-- www -->
@@ -298,9 +611,21 @@
 
         <!-- #1 Developer -->
         <div class="modules-project" id="developer">
-          <h3>#1 Developer</h3>
+          <h3 class="yellow">#1 Developer</h3>
 
-          <div class="modules-project-tech frame frame-bar_blue">
+          <div class="modules-project-tech frame frame-bar_yellow text-align-left">
+            <p>
+              I created this website under the guidance of my mentor
+              <a href="https://www.jupiter.czest.pl" target="_blank" rel="nofollow">Jupiter</a>, who also designed its appearance.
+            </p>
+            <br />
+            <p>
+              The project was implemented using a desktop-first approach, which means that priority was given to the desktop version of the design,
+              and then it was adapted for smaller screens.
+            </p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Technologies</h4>
             <div>
               <p>CSS</p>
@@ -311,21 +636,21 @@
             </div>
           </div>
 
-          <div class="modules-project-tech frame frame-bar_blue">
+          <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Extensions</h4>
             <div>
               <p>lightGallery</p>
             </div>
           </div>
 
-          <div class="frame frame-bar_blue">
+          <div class="frame frame-bar_yellow">
             <h4>Live Project</h4>
             <button>
               <a href="http://provo.webd.pro/moduly/index.html" target="_blank" rel="nofollow">Go to look</a>
             </button>
           </div>
 
-          <div class="frame frame-bar_blue">
+          <div class="frame frame-bar_yellow">
             <h4>GitHub</h4>
             <button>
               <a href="https://github.com/GrzegorzStacel/developer" target="_blank" rel="nofollow">Go to read</a>
@@ -369,9 +694,13 @@
 
         <!-- #2 Wior -->
         <div class="modules-project" id="wior">
-          <h3 class="yellow">#2 Wior</h3>
+          <h3>#2 Wior</h3>
 
-          <div class="modules-project-tech frame frame-bar_yellow">
+          <div class="modules-project-tech frame frame-bar_blue">
+            <p>I developed the website based on a pre-made layout provided by a designer.</p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_blue">
             <h4>Technologies</h4>
             <div>
               <p>CSS</p>
@@ -381,7 +710,7 @@
             </div>
           </div>
 
-          <div class="modules-project-tech frame frame-bar_yellow">
+          <div class="modules-project-tech frame frame-bar_blue">
             <h4>Extensions</h4>
             <div>
               <p>Vivify</p>
@@ -389,14 +718,14 @@
             </div>
           </div>
 
-          <div class="frame frame-bar_yellow">
+          <div class="frame frame-bar_blue">
             <h4>Live Project</h4>
             <button>
               <a href="https://wior.czest.net/" target="_blank" rel="nofollow">Go to look</a>
             </button>
           </div>
 
-          <div class="frame frame-bar_yellow">
+          <div class="frame frame-bar_blue">
             <h4>GitHub</h4>
             <button>
               <a href="https://github.com/GrzegorzStacel/wior-website" target="_blank" rel="nofollow">Go to read</a>
@@ -440,9 +769,16 @@
 
         <!-- #3 Ann-Marie -->
         <div class="modules-project" id="ann_marie">
-          <h3>#3 Ann-Marie</h3>
+          <h3 class="yellow">#3 Ann-Marie</h3>
 
-          <div class="modules-project-tech frame frame-bar_blue">
+          <div class="modules-project-tech frame frame-bar_yellow">
+            <p>
+              I independently created the entire project in <span class="color-blue">Adobe XD</span>, which allowed me to fully plan and visualize the
+              website's interface before its implementation.
+            </p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Technologies</h4>
             <div>
               <p>PHP</p>
@@ -456,21 +792,21 @@
             </div>
           </div>
 
-          <div class="modules-project-tech frame frame-bar_blue">
+          <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Extensions</h4>
             <div>
               <p>zoomwall.js</p>
             </div>
           </div>
 
-          <div class="frame frame-bar_blue">
+          <div class="frame frame-bar_yellow">
             <h4>Live Project</h4>
             <button>
               <a href="http://salonannmarie.czest.pl/" target="_blank" rel="nofollow">Go to look</a>
             </button>
           </div>
 
-          <div class="frame frame-bar_blue">
+          <div class="frame frame-bar_yellow">
             <h4>GitHub</h4>
             <button>
               <a href="https://github.com/GrzegorzStacel/ann-marie" target="_blank" rel="nofollow">Go to read</a>
@@ -514,9 +850,16 @@
 
         <!-- #4 Pillows -->
         <div class="modules-project" id="pillows">
-          <h3 class="yellow">#4 Pillows</h3>
+          <h3>#4 Pillows</h3>
 
-          <div class="modules-project-tech frame frame-bar_yellow">
+          <div class="modules-project-tech frame frame-bar_blue">
+            <p>
+              The project was completed according to the client's requirements, who had a detailed vision of the layout. I handled the full
+              implementation in <span class="color-blue">Adobe XD</span>, which allowed for precise rendering of the intended design.
+            </p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_blue">
             <h4>Technologies</h4>
             <div>
               <p>PHP</p>
@@ -528,21 +871,21 @@
             </div>
           </div>
 
-          <div class="modules-project-tech frame frame-bar_yellow">
+          <div class="modules-project-tech frame frame-bar_blue">
             <h4>Extensions</h4>
             <div>
               <p>lightbox2</p>
             </div>
           </div>
 
-          <div class="frame frame-bar_yellow">
+          <div class="frame frame-bar_blue">
             <h4>Live Project</h4>
             <button>
               <a href="http://www.poduszki-ttex.pl/" target="_blank" rel="nofollow">Go to look</a>
             </button>
           </div>
 
-          <div class="frame frame-bar_yellow">
+          <div class="frame frame-bar_blue">
             <h4>GitHub</h4>
             <button>
               <a href="https://github.com/GrzegorzStacel/pillows" target="_blank" rel="nofollow">Go to read</a>
@@ -583,9 +926,13 @@
 
         <!-- #5 Montaz -->
         <div class="modules-project" id="montaz">
-          <h3>#5 Montaz</h3>
+          <h3 class="yellow">#5 Montaz</h3>
 
-          <div class="modules-project-tech frame frame-bar_blue">
+          <div class="modules-project-tech frame frame-bar_yellow">
+            <p>I developed the website based on a pre-made layout</p>
+          </div>
+
+          <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Technologies</h4>
             <div>
               <p>CSS</p>
@@ -596,7 +943,7 @@
             </div>
           </div>
 
-          <div class="modules-project-tech frame frame-bar_blue">
+          <div class="modules-project-tech frame frame-bar_yellow">
             <h4>Extensions</h4>
             <div>
               <p>lightbox</p>
@@ -605,14 +952,14 @@
             </div>
           </div>
 
-          <div class="frame frame-bar_blue">
+          <div class="frame frame-bar_yellow">
             <h4>Live Project</h4>
             <button>
               <a href="http://provo.webd.pro/montaz/" target="_blank" rel="nofollow">Go to look</a>
             </button>
           </div>
 
-          <div class="frame frame-bar_blue">
+          <div class="frame frame-bar_yellow">
             <h4>GitHub</h4>
             <button>
               <a href="https://github.com/GrzegorzStacel/montaz" target="_blank" rel="nofollow">Go to read</a>
@@ -646,6 +993,77 @@
                     },
                     {
                       src: "screenshot_montaz_04.png",
+                    },
+                  ],
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </section>
+
+      <!-- C++ -->
+      <section class="modules">
+        <div class="modules-icon" id="c++">
+          <img src="images/icon_c++.png" alt="C++ icon" />
+          <h2>C++</h2>
+        </div>
+
+        <div class="modules-project" id="memory_cards">
+          <h3>Memory cards</h3>
+
+          <div class="modules-project-tech frame frame-bar_blue text-align-left">
+            <p>This is my first application built with <span class="color-blue">C++</span>.</p>
+            <br />
+            <p>I independently built a computer game that helps practice mnemonic techniques through memorizing playing cards.</p>
+            <br />
+            <p>The game requires the player to remember the positions of cards and later recall from memory where a specific card is located.</p>
+            <br />
+            <p>
+              This project utilizes the <span class="color-blue">Qt</span> framework, which enables the creation of advanced user interfaces and
+              handles graphics and events.
+            </p>
+            <br />
+            <p>
+              Working on this project, I developed algorithmic skills, logical thinking, and gained experience in programming with
+              <span class="color-blue">C++</span>.
+            </p>
+          </div>
+
+          <div class="frame frame-bar_blue">
+            <h4>GitHub</h4>
+            <button>
+              <a href="https://github.com/GrzegorzStacel/Memory-game" target="_blank" rel="nofollow">Go to read</a>
+            </button>
+          </div>
+
+          <div class="modules-project-screenshots frame">
+            <h4>Screen Shots</h4>
+            <div id="nanogallery2-memory"></div>
+            <script>
+              jQuery(document).ready(function () {
+                jQuery("#nanogallery2-memory").nanogallery2({
+                  viewerTools: {
+                    topLeft: "none",
+                    topRight: "closeButton",
+                  },
+                  thumbnailHeight: 610,
+                  thumbnailWidth: 610,
+                  thumbnailHoverEffect2: "image_scale_1.00_1.20",
+                  itemsBaseURL: "images/screenshots/",
+
+                  items: [
+                    {
+                      src: "screenshot_memory_01.png",
+                    },
+                    {
+                      src: "screenshot_memory_02.png",
+                    },
+                    {
+                      src: "screenshot_memory_03.png",
+                    },
+                    {
+                      src: "screenshot_memory_04.png",
                     },
                   ],
                 });
